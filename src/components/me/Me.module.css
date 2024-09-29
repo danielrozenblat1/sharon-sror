@@ -57,8 +57,10 @@
   .subtitle {
     font-size: 2em;
       color: #281916;
-    margin-bottom: 10px;
+
     text-align: center;
+    width:90%;
+    margin:10px auto;
     font-family: "Assistant";
   }
   .mac{
