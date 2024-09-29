@@ -44,28 +44,28 @@
     top: -115px;
     left: -75px;
     transform: rotate(-20deg);
-    background-image: url('../../images/שרון\ סרור\ כלות\ 5.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 11.png');
   }
   
   .topRightImage {
     top: -115px;
     right: -75px;
     transform: rotate(20deg);
-    background-image: url('../../images/שרון\ סרור\ כלות\ 7.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 1.png');
   }
   
   .middleLeftImage {
     top: -155px;
     left: calc(25% - 75px);
     transform: rotate(-20deg);
-    background-image: url('../../images/שרון\ סרור\ כלות\ 8.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 10.png');
   }
   
   .middleRightImage {
     top: -155px;
     right: calc(25% - 75px);
     transform: rotate(20deg);
-    background-image: url('../../images/שרון\ סרור\ כלות\ 9.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 5.png');
   }
   
   .explain {

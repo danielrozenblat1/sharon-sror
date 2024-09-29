@@ -97,6 +97,7 @@
     }
     .image {
         margin:2% auto;
+        width: 85%;
       }
     .header {
       font-size: 2.2rem;
@@ -127,6 +128,7 @@
     }
     .image {
         margin:2% auto;
+        width: 90%;
       }
     .header {
       font-size: 2.4rem;
@@ -158,6 +160,7 @@
     }
     .image {
         margin:2% auto;
+        width: 80%;
       }
     .imageContainer {
       width: 60%;
@@ -181,6 +184,7 @@
     }
     .image {
         margin:2% auto;
+        width: 95%;
       }
     .title {
       font-size: 2.3em;
@@ -191,7 +195,10 @@
     .header {
       font-size: 3.2rem;
     }
-  
+    .image {
+      margin:2% auto;
+      width: 90%;
+    }
     .title {
       font-size: 2.4em;
     }
@@ -200,6 +207,10 @@
   @media only screen and (min-width: 750px) and (max-width: 850px) {
     .header {
       font-size: 3.3rem;
+    }
+    .image {
+      margin:2% auto;
+      width: 90%;
     }
   }
   

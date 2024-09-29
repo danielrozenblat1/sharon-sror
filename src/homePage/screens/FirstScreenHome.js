@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import Button from "../../components/MainPageButton/MainPageButton"
-import styles from "./FirstScreenHome.module.css"
-import bride from "../../Icons/wired-outline-653-marriage-hover-pinch.json"
-import makeup from "../../Icons/wired-outline-1587-cosmetic-brush-hover-pinch.json"
-
+import Button from "../../components/MainPageButton/MainPageButton";
+import Loader from '../../components/loader/Loader';
+import styles from "./FirstScreenHome.module.css";
+import bride from "../../Icons/wired-outline-653-marriage-hover-pinch.json";
+import makeup from "../../Icons/wired-outline-1587-cosmetic-brush-hover-pinch.json";
+import middleImage from "../../images/שרון סרור.png"
 export default function FirstScreenHome() {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const imageUrls = [
+      middleImage
+    ];
+
+    const loadImage = (url) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = url;
+      });
+    };
+
+    Promise.all(imageUrls.map(loadImage))
+      .then(() => setImagesLoaded(true))
+      .catch((err) => console.error("Failed to load images", err));
+  }, []);
+
+  if (!imagesLoaded) {
+    return <Loader/>;
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>

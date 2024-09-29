@@ -2,6 +2,7 @@ import ByMe from "../components/ByMe/ByMe";
 import FormScreen from "../components/form/FormScreen";
 import AboutMe from "../components/me/Me";
 import NavBarNew from "../components/NewNav/NavBarNew";
+import VideoGallery from "../components/studioVideos/StudioVideos";
 import FirstScreenTraining from "./screens/FirstScreenTraining";
 import SecondScreenTraining from "./screens/SecondScreenTraining";
 import ThirdScreenTraining from "./screens/ThirdScreenTraining";
@@ -30,6 +31,7 @@ return <>
 <SecondScreenTraining/>
 <FormScreen/>
 <AboutMe/>
+
 <ThirdScreenTraining/>
 <ByMe/>
 </div>

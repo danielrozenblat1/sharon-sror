@@ -5,6 +5,7 @@ import IconTextComponent from '../../components/can/Can';
 import face from "../../Icons/wired-outline-1599-powder-makeup-face-hover-pinch.json"
 import brush from "../../Icons/wired-outline-1587-cosmetic-brush-hover-pinch (1).json"
 import social from "../../Icons/wired-outline-962-social-media-marketing-hover-pinch.json"
+import TrainingSyllabus from '../../components/TrainingSillabus/TrainingSillabus';
 const SecondScreenTraining = () => {
     return (
         <div className={styles.container}>
@@ -25,7 +26,7 @@ const SecondScreenTraining = () => {
                 <li><Book className={styles.icon} size={24} /><span>תעודת הסמכה</span></li>
             </ul>
             <div className={styles.title}>וזה עובד ככה:</div>
-            {/* סילבוס */}
+           <TrainingSyllabus/>
             <div className={styles.title}>ממני תצאי כשאת</div>
             <div className={styles.row}>
             <IconTextComponent icon={brush} text="בטוחה ושולטת הרבה יותר ביכולות האיפור שלך"/>

@@ -1,24 +1,70 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import styles from "./FirstScreenBrides.module.css";
 import { ChevronDown } from 'lucide-react';
+import Loader from '../../components/loader/Loader';
 
 const FirstScreenBrides = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const topLeftImageRef = useRef(null);
   const topRightImageRef = useRef(null);
   const middleLeftImageRef = useRef(null);
   const middleRightImageRef = useRef(null);
 
   useEffect(() => {
+    const imageRefs = [topLeftImageRef, topRightImageRef, middleLeftImageRef, middleRightImageRef];
+    let loadedCount = 0;
+
+    const checkImageLoaded = (ref) => {
+      if (ref.current) {
+        const computedStyle = window.getComputedStyle(ref.current);
+        const backgroundImage = computedStyle.backgroundImage;
+        
+        if (backgroundImage && backgroundImage !== 'none') {
+          const img = new Image();
+          img.src = backgroundImage.slice(4, -1).replace(/["']/g, "");
+          
+          if (img.complete) {
+            loadedCount++;
+          } else {
+            img.onload = () => {
+              loadedCount++;
+              if (loadedCount === imageRefs.length) {
+                setImagesLoaded(true);
+              }
+            };
+            img.onerror = () => {
+              loadedCount++;
+              if (loadedCount === imageRefs.length) {
+                setImagesLoaded(true);
+              }
+            };
+          }
+        } else {
+          loadedCount++;
+        }
+      } else {
+        loadedCount++;
+      }
+      
+      if (loadedCount === imageRefs.length) {
+        setImagesLoaded(true);
+      }
+    };
+
+    imageRefs.forEach(checkImageLoaded);
+  }, []);
+
+  useEffect(() => {
+    if (!imagesLoaded) return;
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Move side images down slightly on scroll
       if (topLeftImageRef.current && topRightImageRef.current) {
         topLeftImageRef.current.style.transform = `rotate(-20deg) translateY(${scrollY * 0.1}px)`;
         topRightImageRef.current.style.transform = `rotate(20deg) translateY(${scrollY * 0.1}px)`;
       }
       
-      // Move middle images up slightly on scroll
       if (middleLeftImageRef.current && middleRightImageRef.current) {
         middleLeftImageRef.current.style.transform = `rotate(-20deg) translateY(${-scrollY * 0.1}px)`;
         middleRightImageRef.current.style.transform = `rotate(20deg) translateY(${-scrollY * 0.1}px)`;
@@ -30,7 +76,11 @@ const FirstScreenBrides = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [imagesLoaded]);
+
+  if (!imagesLoaded) {
+    return <Loader />;
+  }
 
   return (
     <div className={styles.container}>
