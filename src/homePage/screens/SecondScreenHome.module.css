@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 350px) {
     .sliderContainer {
-        width: 80%;
+        width: 85%;
         margin: auto;
     }
     .image1, .image2 {
@@ -75,7 +75,7 @@
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {
     .sliderContainer {
-        width: 70%;
+        width: 85%;
         margin: auto;
     }
     .image1, .image2 {

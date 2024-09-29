@@ -22,7 +22,7 @@ import Button from '../../components/button/Button';
 const CustomArrow = ({ className, style, onClick, direction }) => (
     <div
         className={`${className} ${styles.customArrow} ${styles[direction]}`}
-        style={{ ...style, display: "block" }}
+        style={{ ...style,}}
         onClick={onClick}
     >
         {direction === 'prev' ? (

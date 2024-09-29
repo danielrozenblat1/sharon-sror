@@ -102,7 +102,10 @@
     .header {
       font-size: 2.2rem;
     }
-  
+    .subtitle {
+      font-size: 1.5em;
+
+    }
     .imageContainer {
       padding-right: 0;
       padding-bottom: 10px;
@@ -113,7 +116,7 @@
     }
   
     .title {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     .description {
@@ -133,7 +136,10 @@
     .header {
       font-size: 2.4rem;
     }
-  
+    .subtitle {
+      font-size: 1.5em;
+
+    }
     .imageContainer {
       padding-right: 0;
       padding-bottom: 15px;
