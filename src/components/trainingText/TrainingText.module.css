@@ -96,6 +96,9 @@
 /* מתחת ל-350px */
 @media (max-width: 349px) {
     .container { padding: 10px; }
+    .center{
+        width:70%
+    }
     .title { font-size: 1.5rem; }
     .description { font-size: 1.1rem;  margin: 10px 0; }
     .specialDescription { font-size: 1.1rem; padding: 10px; width:95%;  margin: 5px 0; }
@@ -106,6 +109,9 @@
 @media (min-width: 350px) and (max-width: 450px) {
     .container { padding: 12px; }
     .title { font-size: 1.6rem; }
+    .center{
+        width:65%
+    }
     .description { font-size: 1.2rem; margin:5px 0; }
     .specialDescription { font-size: 1.15rem; padding: 10px;  width:95%; margin: 5px 0;}
     .benefitsList li { font-size: 1.1rem; }
@@ -115,6 +121,9 @@
 @media (min-width: 450px) and (max-width: 550px) {
     .container { padding: 15px; }
     .title { font-size: 1.7rem; }
+    .center{
+        width:60%
+    }
     .description { font-size: 1.3rem; }
     .specialDescription { font-size: 1.3rem; width:85%; }
 }
@@ -122,6 +131,9 @@
 /* 550px-650px */
 @media (min-width: 550px) and (max-width: 650px) {
     .title { font-size: 1.8rem; }
+    .center{
+        width:55%
+    }
     .row { flex-direction: column; }
      .specialDescription { font-size: 1.3rem; width:75%; }
 }
@@ -130,12 +142,18 @@
 @media (min-width: 650px) and (max-width: 750px) {
     .title { font-size: 1.9rem; }
     .specialDescription { font-size: 1.3rem; width:75%; }
+    .center{
+        width:50%
+    }
 }
 
 /* 750px-850px */
 @media (min-width: 750px) and (max-width: 850px) {
     /* הקלאסים הרגילים מתאימים לטווח זה */
     .specialDescription { font-size: 1.3rem; width:70%; }
+    .center{
+        width:45%
+    }
 }
 
 /* 850px-950px */
@@ -143,6 +161,9 @@
     .container { max-width: 850px; }
     .title { font-size: 2.1rem; }
     .description { font-size: 1.5rem; }
+    .center{
+        width:40%
+    }
     .specialDescription { font-size: 1.35rem;width:70%; }
 }
 
@@ -151,7 +172,10 @@
     .container { max-width: 950px; }
     .title { font-size: 2.2rem; }
     .description { font-size: 1.6rem; }
-    .specialDescription { font-size: 1.35rem;width:60%; }
+    .specialDescription { font-size: 1.35rem; width:60%; }
+    .center{
+        width:35%
+    }
 }
 
 /* 1050px-1150px */

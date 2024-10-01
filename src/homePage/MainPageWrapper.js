@@ -7,6 +7,7 @@ import ThirdScreenHome from "./screens/ThirdScreenHome";
 import ByMe from "../components/ByMe/ByMe";
 import AboutMe from "../components/me/Me";
 import Place from "../components/place/Place";
+import ThirdScreenBrides from "../bridesPage/screens/ThirdScreenBrides";
 
 const MainPageWrapper=()=>{
     const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ return <>
 <SecondScreenHome title="מקבץ מהכלות שסמכו עלי"/>
 <AboutMe/>
 <Place/>
-
+<ThirdScreenBrides/>
 <ByMe/>
 </div>
 </>

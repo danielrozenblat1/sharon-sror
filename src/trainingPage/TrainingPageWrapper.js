@@ -1,3 +1,4 @@
+import ThirdScreenBrides from "../bridesPage/screens/ThirdScreenBrides";
 import ByMe from "../components/ByMe/ByMe";
 import FormScreen from "../components/form/FormScreen";
 import AboutMe from "../components/me/Me";
@@ -32,7 +33,7 @@ return <>
 <FormScreen/>
 <AboutMe/>
 
-<ThirdScreenTraining/>
+<ThirdScreenBrides/>
 <ByMe/>
 </div>
 </>
