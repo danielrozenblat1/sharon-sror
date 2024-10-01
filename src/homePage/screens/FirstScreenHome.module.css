@@ -25,7 +25,8 @@
 }
 
 .centerImage {
-  background-image: url('../../images/שרון\ סרור.png');
+  background-image: url('../../images/שרון\ סרור\ תדמית\ 2.png');
+
 }
 
 /* Hide side images by default */
@@ -38,12 +39,13 @@
   padding: 0.5rem;
   border-radius: 1.5rem;
   width: 90%; /* Wider on small screens */
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
   box-shadow: 0 8px 32px rgba(255, 255, 255, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  position: relative;
+  position: absolute;
   overflow: hidden;
+bottom: 15%;
   z-index: 1;
 }
 
@@ -59,16 +61,16 @@
 }
 
 .title {
-  font-family: 'Dancing';
-  font-size: 2.25rem;
+  font-family: 'PlayFair';
+  font-size: 2.2rem;
   direction: rtl;
   margin-bottom: 1rem;
   color: white;
 }
 
 .subtitle {
-  font-family: 'Noto';
-  font-size: 1.1rem;
+  font-family: 'ManRope';
+  font-size: 1.25rem;
   margin-bottom: 1.5rem;
   color: rgb(255, 255, 255);
   direction: rtl;
@@ -90,19 +92,27 @@
 /* Responsive breakpoints */
 @media (min-width: 350px) {
   .content {
-    width: 85%;
+    width: 90%;
+    bottom: 10%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 450px) {
   .content {
-    width: 80%;
+    width: 85%;
   }
 }
 
 @media (min-width: 550px) {
   .content {
     width: 75%;
+
   }
   
   /* Show side images from 550px with equal widths */
@@ -120,11 +130,11 @@
   }
   
   .leftImage {
-    background-image: url('../../images/שרון\ סרור\ כלות\ 8.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 11.png');
   }
   
   .rightImage {
-    background-image: url('../../images/שרון\ סרור\ כלות\ 7.png');
+    background-image: url('../../images/שרון\ סרור\ כלות\ 12.png');
   }
 }
 

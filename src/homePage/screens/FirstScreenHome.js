@@ -40,12 +40,12 @@ export default function FirstScreenHome() {
         <div className={`${styles.backgroundImage} ${styles.rightImage}`}></div>
       </div>
       <div className={styles.content}>
-        <h1 className={styles.title}>SHARON SRUR</h1>
-        <p className={styles.subtitle}>איפור כלות || השתלמויות למאפרות</p>
+        <h1 className={styles.title}>SHARON SROR</h1>
+        <p className={styles.subtitle}>Makeup artist and mentor</p>
         
         <Button text="אני כלה לעתיד" icon={bride} to="כלה"/>
         <Button text="אני מאפרת" icon={makeup} to="מאפרת"/>
-        <ChevronDown className={styles.icon} size={36}/>
+        {/* <ChevronDown className={styles.icon} size={36}/> */}
       </div>
     </div>
   );

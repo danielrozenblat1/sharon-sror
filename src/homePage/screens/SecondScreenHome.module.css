@@ -65,8 +65,8 @@
         object-fit: contain;
     }
     .title {
-        font-size: 35px;
-        width: 90%;
+        font-size: 25px;
+        width: 100%;
     }
     .description {
         font-size: 1rem;
@@ -84,8 +84,8 @@
         object-fit: contain;
     }
     .title {
-        font-size: 40px;
-        width: 90%;
+        font-size: 30px;
+        width: 100%;
     }
     .description {
         font-size: 1.1rem;

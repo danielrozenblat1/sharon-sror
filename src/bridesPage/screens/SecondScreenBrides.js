@@ -23,15 +23,15 @@ const SecondScreenBrides = () => {
             <div className={styles.title}>אצלי כל כלה</div>
             <div className={styles.row}>
 
-            <IconTextComponent icon={wedding} text="מקבלת איפור שמותאם לה אישית לפי שיחת התאמה לאופי ותיאום ציפיות"/>
+            <IconTextComponent icon={wedding} text="מקבלת איפור שמותאם לה אישית לאחר שיחת ייעוץ ותיאום ציפיות"/>
             <IconTextComponent icon={wedding} text="יוצאת רק כשהיא מרוצה מאיך שהיא נראית"/>
             <IconTextComponent icon={wedding} text="מקבלת את המקום לתת דגשים,הערות ורצונות מיוחדים"/>
             </div>
             <div className={styles.title}>זה קורה ככה:</div>
             <div className={styles.row}>
                 <LessonBubble lessonNumber="1" title="שיחת הכרות" description="לפני שנתחיל לאפיין את האיפור האידיאלי עבורך אני צריכה להבין מי את , איך את מדמיינת את האיפור שלך ולקבל המחשה ויזואלית"/>
-                <LessonBubble lessonNumber="2" title="פגישת התאמה" description="בפגישה נכיר ואשאל כמה שאלות כדי להתאים את סגנון האיפור לאופי שלך"/>
-                <LessonBubble lessonNumber="3" title="פגישה ביום החתונה" description="ביום בחתונה שלך אני איתך! מאפרת אותך,מלווה אותך בהתארגנות, בהכנות וגם ברגעים המלחיצים שלפני הכניסה לחופה"/>
+                <LessonBubble lessonNumber="2" title="פגישת ייעוץ" description="בפגישה נכיר ואשאל כמה שאלות כדי להתאים את סגנון האיפור לאופי שלך"/>
+                <LessonBubble lessonNumber="3" title="היום הגדול" description="ביום בחתונה שלך אני איתך! מאפרת אותך,מלווה אותך בהתארגנות, בהכנות וברגעים הכי מאושרים בחיים"/>
             </div>
         </div>
     );

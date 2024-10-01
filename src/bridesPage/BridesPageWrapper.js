@@ -31,7 +31,7 @@ return <>
 <NavBarNew/>
 <FirstScreenBrides/>
 <SecondScreenBrides/>
-<SecondScreenHome title="מקבץ כלות ונשים שעברו דרכי"/>
+<SecondScreenHome title="מקבץ כלות ולקוחות שעברו דרכי"/>
 <FormScreen/>
 <AboutMe/>
 <ThirdScreenBrides/>

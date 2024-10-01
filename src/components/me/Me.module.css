@@ -57,7 +57,7 @@
   .subtitle {
     font-size: 2em;
       color: #281916;
-
+direction: rtl;
     text-align: center;
     width:90%;
     margin:10px auto;
@@ -74,13 +74,23 @@
     margin:2% auto;
     justify-content: center;
   }
-  .description {
-    font-size: 1em;
+  .description,.explain {
+    font-size: 1.1em;
     line-height: 1.6;
+
+    margin:1% auto;
     font-family: "AssistantR";
       color: #281916;
   }
-  
+  .explain {
+    font-size: 1.1em;
+    line-height: 1.6;
+width:90%;
+    margin:1% auto;
+    text-align: center;
+    font-family: "AssistantR";
+      color: #281916;
+  }
   @media only screen and (max-width: 1050px) {
     .container {
       width: 90%;
@@ -121,7 +131,7 @@
       font-size: 1.8rem;
     }
   
-    .description {
+    .description,.explain {
       font-size: 1rem;
     }
   }

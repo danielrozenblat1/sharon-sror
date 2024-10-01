@@ -17,6 +17,10 @@ import result10 from "../../images/שרון סרור כלות 10.png";
 import result11 from "../../images/שרון סרור כלות 11.png";
 import result12 from "../../images/שרון סרור כלות 12.png";
 import result13 from "../../images/שרון סרור כלות 13.png";
+import result14 from "../../images/שרון סרור כלות 14.png";
+import result15 from "../../images/שרון סרור כלות 15.png";
+import result16 from "../../images/שרון סרור כלות 16.png";
+import result17 from "../../images/שרון סרור כלות 17.png";
 import Button from '../../components/button/Button';
 
 const CustomArrow = ({ className, style, onClick, direction }) => (
@@ -73,6 +77,12 @@ const SecondScreenHome = (props) => {
         { type: 'image', src: result11 },
         { type: 'image', src: result12 },
         { type: 'image', src: result13 },
+        { type: 'image', src: result14 },
+        
+        { type: 'image', src: result15 },
+        { type: 'image', src: result16 },
+        { type: 'image', src: result17 },
+    
     ];
 
     return (
