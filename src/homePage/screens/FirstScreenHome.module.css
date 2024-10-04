@@ -62,15 +62,16 @@ bottom: 15%;
 
 .title {
   font-family: 'PlayFair';
-  font-size: 2.2rem;
+  font-size: 3rem;
   direction: rtl;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: white;
 }
 
 .subtitle {
   font-family: 'ManRope';
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 1.5rem;
   color: rgb(255, 255, 255);
   direction: rtl;

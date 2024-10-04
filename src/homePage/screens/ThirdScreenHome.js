@@ -13,6 +13,7 @@ import result6 from "../../images/שרון סרור המלצה 6.png"
 import result7 from "../../images/שרון סרור המלצה 7.png"
 import result8 from "../../images/שרון סרור המלצה 8.png"
 import result9 from "../../images/שרון סרור המלצה 9.png"
+import result10 from "../../images/שרון סרור המלצה 10.png"
 import Button from "../../components/button/Button";
 
 
@@ -66,6 +67,10 @@ const ThirdScreenHome=(props)=>{
         {
           type: 'image',
           src: result9,
+        },
+        {
+          type: 'image',
+          src: result10,
         },
         
     ];
