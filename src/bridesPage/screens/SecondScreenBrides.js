@@ -31,7 +31,7 @@ const SecondScreenBrides = () => {
             <div className={styles.row}>
                 <LessonBubble lessonNumber="1" title="שיחת הכרות" description="לפני שנתחיל לאפיין את האיפור האידיאלי עבורך אני צריכה להבין מי את , איך את מדמיינת את האיפור שלך ולקבל המחשה ויזואלית"/>
                 <LessonBubble lessonNumber="2" title="פגישת ייעוץ" description="בפגישה נכיר ואשאל כמה שאלות כדי להתאים את סגנון האיפור לאופי שלך"/>
-                <LessonBubble lessonNumber="3" title="היום הגדול" description="ביום בחתונה שלך אני איתך! מאפרת אותך,מלווה אותך בהתארגנות, בהכנות וברגעים הכי מאושרים בחיים"/>
+                <LessonBubble lessonNumber="3" title="היום הגדול" description="ביום החתונה שלך אני איתך! מאפרת אותך,מלווה אותך בהתארגנות, בהכנות וברגעים הכי מאושרים בחיים"/>
             </div>
         </div>
     );

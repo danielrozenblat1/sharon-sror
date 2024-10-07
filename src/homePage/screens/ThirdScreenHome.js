@@ -14,6 +14,9 @@ import result7 from "../../images/שרון סרור המלצה 7.png"
 import result8 from "../../images/שרון סרור המלצה 8.png"
 import result9 from "../../images/שרון סרור המלצה 9.png"
 import result10 from "../../images/שרון סרור המלצה 10.png"
+import result11 from "../../images/שרון סרור המלצה 11.png"
+import result12 from "../../images/שרון סרור המלצה 12.png"
+import result14 from "../../images/שרון סרור המלצה 14.png"
 import Button from "../../components/button/Button";
 
 
@@ -72,6 +75,18 @@ const ThirdScreenHome=(props)=>{
           type: 'image',
           src: result10,
         },
+        {
+          type: 'image',
+          src: result11,
+        },
+        {
+          type: 'image',
+          src: result12,
+        },
+        {
+          type: 'image',
+          src: result14,
+        },
         
     ];
 return <>
@@ -89,7 +104,7 @@ return <>
           ))}
         </Slider>
       </div>
-  <Button text="שרון,בואי נדבר!" message="מה נשמע שרון? התרשמתי מהעבודות שלך ומהביקורות עלייך, אשמח לשמוע עוד לגבי איפור כלות"/>
+  <Button text="שרון,בואי נדבר!" message="מה נשמע שרון? התרשמתי מהעבודות שלך ומהביקורות עלייך, אשמח לשמוע עוד על.."/>
     </>
 }
 export default ThirdScreenHome

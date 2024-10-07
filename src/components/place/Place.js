@@ -23,9 +23,9 @@ const Place = () => {
       <div className={styles.box}>
         <h2 className={styles.title}>שעות הפעילות שלי:</h2>
         <p className={styles.hours}>
-          ימי א-ה 9:00-18:00<br />
-          יום שישי 9:00:15:00<br />
-          יום שבת: סגור
+          ימי א-ה : 9:00-18:00<br />
+          יום שישי : 9:00-15:00<br />
+          יום שבת:סגור
         </p>
       </div>
     </div>

@@ -26,7 +26,8 @@
 }
 
 .topLeftImage,
-.topRightImage {
+.topRightImage,
+.centerImage {
   position: absolute;
   width: 180px;
   height: 240px;
@@ -35,21 +36,33 @@
   background-repeat: no-repeat;
   border-radius: 10px;
   z-index: -1;
+}
+
+.topLeftImage,
+.topRightImage {
   transition: transform 0.1s ease-out;
 }
 
 .topLeftImage {
-  top: -135px; /* Raised by 15px */
+  top: -135px;
   left: -60px;
   transform: rotate(-20deg);
   background-image: url('../../images/שרון\ סרור\ כלות\ 5.png');
 }
 
 .topRightImage {
-  top: -135px; /* Raised by 15px */
+  top: -135px;
   right: -60px;
   transform: rotate(20deg);
   background-image: url('../../images/שרון\ סרור\ כלות\ 7.png');
+}
+
+.centerImage {
+  top: -135px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../../images/שרון\ סרור\ כלות\ 26.png');
+  z-index: -2;
 }
 
 .explain {
@@ -155,17 +168,21 @@
     width: 70%;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 90px;
     height: 120px;
   }
   .topLeftImage {
-    top: -75px; /* Raised by 15px */
+    top: -75px;
     left: -30px;
   }
   .topRightImage {
-    top: -75px; /* Raised by 15px */
+    top: -75px;
     right: -30px;
+  }
+  .centerImage {
+    top: -75px;
   }
 }
 
@@ -190,17 +207,21 @@
     font-size: 1.5rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 110px;
     height: 147px;
   }
   .topLeftImage {
-    top: -85px; /* Raised by 15px */
+    top: -85px;
     left: -35px;
   }
   .topRightImage {
-    top: -85px; /* Raised by 15px */
+    top: -85px;
     right: -35px;
+  }
+  .centerImage {
+    top: -85px;
   }
 }
 
@@ -225,17 +246,21 @@
     font-size: 1.5rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 130px;
     height: 173px;
   }
   .topLeftImage {
-    top: -95px; /* Raised by 15px */
+    top: -95px;
     left: -40px;
   }
   .topRightImage {
-    top: -95px; /* Raised by 15px */
+    top: -95px;
     right: -40px;
+  }
+  .centerImage {
+    top: -95px;
   }
 }
 
@@ -256,17 +281,21 @@
     font-size: 1.5rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 150px;
     height: 200px;
   }
   .topLeftImage {
-    top: -105px; /* Raised by 15px */
+    top: -105px;
     left: -50px;
   }
   .topRightImage {
-    top: -105px; /* Raised by 15px */
+    top: -105px;
     right: -50px;
+  }
+  .centerImage {
+    top: -105px;
   }
 }
 
@@ -290,17 +319,21 @@
     font-size: 1.6rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 160px;
     height: 213px;
   }
   .topLeftImage {
-    top: -115px; /* Raised by 15px */
+    top: -115px;
     left: -55px;
   }
   .topRightImage {
-    top: -115px; /* Raised by 15px */
+    top: -115px;
     right: -55px;
+  }
+  .centerImage {
+    top: -115px;
   }
 }
 
@@ -324,17 +357,21 @@
     font-size: 1.7rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 170px;
     height: 227px;
   }
   .topLeftImage {
-    top: -125px; /* Raised by 15px */
+    top: -125px;
     left: -58px;
   }
   .topRightImage {
-    top: -125px; /* Raised by 15px */
+    top: -125px;
     right: -58px;
+  }
+  .centerImage {
+    top: -125px;
   }
 }
 
@@ -358,17 +395,21 @@
     font-size: 1.8rem;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 175px;
     height: 233px;
   }
   .topLeftImage {
-    top: -130px; /* Raised by 15px */
+    top: -130px;
     left: -59px;
   }
   .topRightImage {
-    top: -130px; /* Raised by 15px */
+    top: -130px;
     right: -59px;
+  }
+  .centerImage {
+    top: -130px;
   }
 }
 
@@ -380,17 +421,21 @@
     max-width: 65%;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 177px;
     height: 236px;
   }
   .topLeftImage {
-    top: -132px; /* Raised by 15px */
+    top: -132px;
     left: -59px;
   }
   .topRightImage {
-    top: -132px; /* Raised by 15px */
+    top: -132px;
     right: -59px;
+  }
+  .centerImage {
+    top: -132px;
   }
 }
 
@@ -405,17 +450,21 @@
     max-width: 65%;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 178px;
     height: 237px;
   }
   .topLeftImage {
-    top: -133px; /* Raised by 15px */
+    top: -133px;
     left: -60px;
   }
   .topRightImage {
-    top: -133px; /* Raised by 15px */
+    top: -133px;
     right: -60px;
+  }
+  .centerImage {
+    top: -133px;
   }
 }
 
@@ -430,16 +479,20 @@
     max-width: 65%;
   }
   .topLeftImage,
-  .topRightImage {
+  .topRightImage,
+  .centerImage {
     width: 180px;
     height: 240px;
   }
   .topLeftImage {
-    top: -135px; /* Raised by 15px */
+    top: -135px;
     left: -60px;
   }
   .topRightImage {
-    top: -135px; /* Raised by 15px */
+    top: -135px;
     right: -60px;
+  }
+  .centerImage {
+    top: -135px;
   }
 }

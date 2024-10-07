@@ -22,9 +22,7 @@ const TrainingText = () => {
                 <span>שכל הסיפור לא מתחיל ונגמר רק באיפור</span>
                 <AlertCircle className={styles.icon} size={32} />
             </div>
-            <p className={styles.description}>
-ואת כל שאר ה"מקצועות" שקיבלת פתאום, לוקח זמן ללמוד ולהבין 
-      </p>
+
       <p className={styles.description}>
       היות ואני עקשנית פיצחתי את השיטה בעבודה קשה והתמדה מרובה
       </p>

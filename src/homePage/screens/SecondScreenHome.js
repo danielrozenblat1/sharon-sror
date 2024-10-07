@@ -21,6 +21,19 @@ import result14 from "../../images/שרון סרור כלות 14.png";
 import result15 from "../../images/שרון סרור כלות 15.png";
 import result16 from "../../images/שרון סרור כלות 16.png";
 import result17 from "../../images/שרון סרור כלות 17.png";
+import result18 from "../../images/שרון סרור כלות 18.png";
+import result19 from "../../images/שרון סרור כלות 19.png";
+import result20 from "../../images/שרון סרור כלות 20.png";
+import result21 from "../../images/שרון סרור כלות 21.png";
+import result22 from "../../images/שרון סרור כלות 22.png";
+import result23 from "../../images/שרון סרור כלות 23.png";
+import result24 from "../../images/שרון סרור כלות 24.png";
+import result25 from "../../images/שרון סרור כלות 25.png";
+import result26 from "../../images/שרון סרור כלות 26.png";
+import result27 from "../../images/שרון סרור כלות 27.png";
+import result28 from "../../images/שרון סרור כלות 28.png";
+import result29 from "../../images/שרון סרור כלות 29.png";
+import result30 from "../../images/שרון סרור כלות 30.png";
 import Button from '../../components/button/Button';
 
 const CustomArrow = ({ className, style, onClick, direction }) => (
@@ -78,11 +91,24 @@ const SecondScreenHome = (props) => {
         { type: 'image', src: result12 },
         { type: 'image', src: result13 },
         { type: 'image', src: result14 },
-        
         { type: 'image', src: result15 },
         { type: 'image', src: result16 },
         { type: 'image', src: result17 },
-    
+        { type: 'image', src: result18 },
+        { type: 'image', src: result19 },
+        { type: 'image', src: result20 },
+        { type: 'image', src: result21 },
+        { type: 'image', src: result22 },
+        { type: 'image', src: result23 },
+        { type: 'image', src: result24 },
+        { type: 'image', src: result25 },
+        { type: 'image', src: result26 },
+        { type: 'image', src: result27 },
+        { type: 'image', src: result28 },
+        { type: 'image', src: result29 },
+        { type: 'image', src: result30 },
+       
+
     ];
 
     return (

@@ -28,7 +28,7 @@ return <>
 <div className={styles.background}>
 {/* <NavBarNew/> */}
 <FirstScreenHome scrolled={scrolled} />
-<SecondScreenHome title="מקבץ מהכלות שסמכו עלי"/>
+<SecondScreenHome title="מקבץ מהכלות והלקוחות שסמכו עלי"/>
 <AboutMe/>
 <Place/>
 <ThirdScreenBrides/>

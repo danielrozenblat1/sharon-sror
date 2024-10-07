@@ -10,6 +10,7 @@ import {useEffect,useRef, useState} from "react"
 import Place from "../components/place/Place";
 import ThirdScreenHome from "../homePage/screens/ThirdScreenHome";
 import SecondScreenHome from "../homePage/screens/SecondScreenHome";
+import VideoStudio from "../components/VideoStudio/VideoStudio";
 
 const BridesPageWrapper=()=>{
     const [scrolled, setScrolled] = useState(false);
@@ -32,6 +33,7 @@ return <>
 <FirstScreenBrides/>
 <SecondScreenBrides/>
 <SecondScreenHome title="מקבץ כלות ולקוחות שעברו דרכי"/>
+<VideoStudio/>
 <FormScreen/>
 <AboutMe/>
 <ThirdScreenBrides/>

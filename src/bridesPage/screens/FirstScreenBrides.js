@@ -7,11 +7,10 @@ const FirstScreenBrides = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const topLeftImageRef = useRef(null);
   const topRightImageRef = useRef(null);
-  const middleLeftImageRef = useRef(null);
-  const middleRightImageRef = useRef(null);
+  const centerImageRef = useRef(null);
 
   useEffect(() => {
-    const imageRefs = [topLeftImageRef, topRightImageRef, middleLeftImageRef, middleRightImageRef];
+    const imageRefs = [topLeftImageRef, topRightImageRef, centerImageRef];
     let loadedCount = 0;
 
     const checkImageLoaded = (ref) => {
@@ -64,11 +63,6 @@ const FirstScreenBrides = () => {
         topLeftImageRef.current.style.transform = `rotate(-20deg) translateY(${scrollY * 0.1}px)`;
         topRightImageRef.current.style.transform = `rotate(20deg) translateY(${scrollY * 0.1}px)`;
       }
-      
-      if (middleLeftImageRef.current && middleRightImageRef.current) {
-        middleLeftImageRef.current.style.transform = `rotate(-20deg) translateY(${-scrollY * 0.1}px)`;
-        middleRightImageRef.current.style.transform = `rotate(20deg) translateY(${-scrollY * 0.1}px)`;
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -88,8 +82,7 @@ const FirstScreenBrides = () => {
         <div className={styles.imageContainer}>
           <div ref={topLeftImageRef} className={styles.topLeftImage}></div>
           <div ref={topRightImageRef} className={styles.topRightImage}></div>
-          {/* <div ref={middleLeftImageRef} className={styles.middleLeftImage}></div>
-          <div ref={middleRightImageRef} className={styles.middleRightImage}></div> */}
+          <div ref={centerImageRef} className={styles.centerImage}></div>
         </div>
         <div className={styles.explain}>
           היום הכי חשוב שלך מתקרב

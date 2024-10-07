@@ -7,6 +7,7 @@ import brush from "../../Icons/wired-outline-1587-cosmetic-brush-hover-pinch (1)
 import social from "../../Icons/wired-outline-962-social-media-marketing-hover-pinch.json"
 import TrainingSyllabus from '../../components/TrainingSillabus/TrainingSillabus';
 import TrainingText from '../../components/trainingText/TrainingText';
+import TrainingParts from '../../components/TrainingParts/TrainingParts';
 const SecondScreenTraining = () => {
     return (
         <div className={styles.container}>
@@ -22,7 +23,7 @@ const SecondScreenTraining = () => {
                 <li><Book className={styles.icon} size={24} /><span>טכניקות חדשות לשיפור וחיזוק החלקים החלשים שלך</span></li>
                 <li><Camera className={styles.icon} size={24} /><span>לצלם בצורה מעניינת שתגדיל את החשיפה שלך ברשתות</span></li>
                 <li><Book className={styles.icon} size={24} /><span>כלים מעשיים עם משימות לטווח הקרוב להתחיל להשתפר</span></li>
-                <li><Users className={styles.icon} size={24} /><span>יחס אישי ומעבר על כל החלקים החלשים בעסק שלך</span></li>
+          
                 <li><Users className={styles.icon} size={24} /><span>יחס אישי ומעבר על כל החלקים הטכניים שאת רוצה להתחזק בהם</span></li>
                 <li><Book className={styles.icon} size={24} /><span>תעודת הסמכה</span></li>
             </ul>
@@ -34,6 +35,7 @@ const SecondScreenTraining = () => {
             <IconTextComponent icon={face} text="מלאה בטכניקות חדשות לאיפור שעוד לא שמעת עליהן"/>
             <IconTextComponent icon={social} text="קיבלת כלים וידע לעיצוב התדמית שלך ברשתות החברתיות"/>
             </div>
+            <TrainingParts/>
             <TrainingText/>
         </div>
     );

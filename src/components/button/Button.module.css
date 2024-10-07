@@ -14,6 +14,7 @@
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
+    direction: rtl;
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
