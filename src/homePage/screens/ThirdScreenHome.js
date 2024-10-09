@@ -104,7 +104,7 @@ return <>
           ))}
         </Slider>
       </div>
-  <Button text="שרון,בואי נדבר!" message="מה נשמע שרון? התרשמתי מהעבודות שלך ומהביקורות עלייך, אשמח לשמוע עוד על.."/>
+  <Button text="שרון,בואי נדבר!" message={props.message}/>
     </>
 }
 export default ThirdScreenHome

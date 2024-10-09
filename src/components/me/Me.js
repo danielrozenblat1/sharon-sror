@@ -8,7 +8,22 @@ import macVideo from "../../videos/שרון סרור מאק.mp4"
 import sharonTraining from "../../videos/שרון סרור השתלמות.mp4"
 import sharonPhotoes from "../../videos/שרון סרור צילום.mp4"
 import sharonSadna from "../../videos/שרון סרור סדנא.mp4"
+import { useLocation } from 'react-router-dom';
 const AboutMe = () => {
+  const location = useLocation();
+  const getMessage = () => {
+    
+    const decodedPath = decodeURIComponent(location.pathname);
+    console.log(decodedPath)
+    switch (decodedPath) {
+      case '/מאפרת':
+        return 'היי שרון , אני מעונינת בהשתלמות למאפרות האם אפשר לקבל פרטים נוספים ?';
+      case '/כלה':
+        return 'היי שרון ,  אני מעונינת לשמוע פרטים לגבי איפור כלה';
+      default:
+        return 'היי שרון, אשמח לשמוע פרטים לגבי';
+    }
+  };
   const videos=[   { src:macVideo, alt: 'שרון סרור הרצאה מאק' },{ src:sharonTraining, alt: 'שרון סרור השתלמות' },{ src:sharonPhotoes, alt: 'שרון סרור צילום' },{ src:sharonSadna, alt: 'שרון סרור סדנא' },]
   return <>
       <div className={styles.header} id="מי אני">קצת עלי</div>
@@ -40,7 +55,7 @@ const AboutMe = () => {
         </p>
 </div>
       <div className={styles.subtitle}>וזה רק מקבץ ממה שיש למי שעברה אצלי לומר</div>
-      <ThirdScreenHome/>
+      <ThirdScreenHome message={getMessage()}/>
 
     </>
 };

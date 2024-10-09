@@ -35,6 +35,7 @@ import result28 from "../../images/שרון סרור כלות 28.png";
 import result29 from "../../images/שרון סרור כלות 29.png";
 import result30 from "../../images/שרון סרור כלות 30.png";
 import Button from '../../components/button/Button';
+import { useLocation } from 'react-router-dom';
 
 const CustomArrow = ({ className, style, onClick, direction }) => (
     <div
@@ -75,7 +76,20 @@ const SecondScreenHome = (props) => {
             );
         }
     };
-
+    const location = useLocation();
+    const getMessage = () => {
+    
+        const decodedPath = decodeURIComponent(location.pathname);
+        console.log(decodedPath)
+        switch (decodedPath) {
+          case '/מאפרת':
+            return 'היי שרון , אני מעונינת בהשתלמות למאפרות האם אפשר לקבל פרטים נוספים ?';
+          case '/כלה':
+            return 'היי שרון ,  אני מעונינת לשמוע פרטים לגבי איפור כלה';
+          default:
+            return 'היי שרון, אשמח לשמוע פרטים לגבי';
+        }
+      };
     const content = [
         { type: 'image', src: result1 },
         { type: 'image', src: result2 },
@@ -132,7 +146,7 @@ const SecondScreenHome = (props) => {
                     </Slider>
                 </div>
             </div>
-            <Button text="שרון, בואי נדבר" message="היי שרון, ראיתי את הכלות שאיפרת ואני רוצה לשמוע עוד פרטים"/>
+            <Button text="שרון, בואי נדבר" message={getMessage()}/>
         </>
     );
 }
