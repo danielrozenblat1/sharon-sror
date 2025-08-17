@@ -1,0 +1,4 @@
+.background{
+overflow: hidden;
+background: linear-gradient(135deg, rgba(230,220,214,1) 0%, rgba(176,144,123,1) 50%, rgba(230,220,214,1) 100%);
+}

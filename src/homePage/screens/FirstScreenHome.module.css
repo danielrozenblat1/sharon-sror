@@ -1,0 +1,182 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.backgroundImage {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.centerImage {
+  background-image: url('../../images/שרון\ סרור.png');
+
+}
+
+/* Hide side images by default */
+.leftImage, .rightImage {
+  display: none;
+}
+
+.content {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  width: 90%; /* Wider on small screens */
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  overflow: hidden;
+bottom: 15%;
+  z-index: 1;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+}
+
+.title {
+  font-family: 'PlayFair';
+  font-size: 3rem;
+  direction: rtl;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.subtitle {
+  font-family: 'ManRope';
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 255, 255);
+  direction: rtl;
+}
+
+.who {
+  font-family: 'AssistantR';
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  direction: rtl;
+  color: rgb(255, 255, 255);
+}
+
+.icon {
+  margin: 0 auto;
+  color: white;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 350px) {
+  .content {
+    width: 90%;
+    bottom: 10%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .content {
+    width: 85%;
+  }
+}
+
+@media (min-width: 550px) {
+  .content {
+    width: 75%;
+
+  }
+  
+  /* Show side images from 550px with equal widths */
+  .imageContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .backgroundImage {
+    flex: 1;
+  }
+  
+  .leftImage, .rightImage {
+    display: block;
+  }
+  
+  .leftImage {
+    background-image: url('../../images/שרון\ סרור\ כלות\ 11.png');
+  }
+  
+  .rightImage {
+    background-image: url('../../images/שרון\ סרור\ כלות\ 12.png');
+  }
+}
+
+@media (min-width: 650px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 750px) {
+  .content {
+    width: 65%;
+  }
+}
+
+@media (min-width: 850px) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media (min-width: 950px) {
+  .content {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1050px) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .content {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .content {
+    width: 33%;
+  }
+}

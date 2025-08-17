@@ -1,0 +1,187 @@
+/* קלאסים רגילים */
+.container {
+    direction: rtl;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center{
+    width:30%;
+    justify-content: center;
+    margin: 2% auto;
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgb(53, 53, 53);
+}
+.title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2rem;
+    color: #281916;
+    margin: 2% auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.4rem;
+    color: #281916;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+
+.specialDescription {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.6rem;
+    color: #281916;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: linear-gradient(135deg, rgb(147, 142, 122) 0%, rgba(249,247,241,1) 15%, rgba(245,242,232,1) 30%, rgba(249,248,242,1) 45%, rgba(245,242,232,1) 55%, rgba(249,248,242,1) 70%, rgba(245,242,232,1) 85%, rgb(147, 142, 122)100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.specialDescription .icon {
+    margin: 0 15px;
+    color: #000000;
+}
+
+.benefitsList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.benefitsList li {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.2rem;
+    color: #281916;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.benefitsList .icon {
+    margin-left: 10px;
+    color: #432918;
+    flex-shrink: 0;
+}
+
+.benefitsList li span {
+    flex: 1;
+}
+
+/* מדיה קווריז לטווחים ספציפיים */
+
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+    .container { padding: 10px; }
+    .center{
+        width:70%
+    }
+    .title { font-size: 1.5rem; }
+    .description { font-size: 1.1rem;  margin: 10px 0; }
+    .specialDescription { font-size: 1.1rem; padding: 10px; width:95%;  margin: 5px 0; }
+    .benefitsList li { font-size: 1rem; }
+}
+
+/* 350px-450px */
+@media (min-width: 350px) and (max-width: 450px) {
+    .container { padding: 12px; }
+    .title { font-size: 1.6rem; }
+    .center{
+        width:65%
+    }
+    .description { font-size: 1.2rem; margin:5px 0; }
+    .specialDescription { font-size: 1.15rem; padding: 10px;  width:95%; margin: 5px 0;}
+    .benefitsList li { font-size: 1.1rem; }
+}
+
+/* 450px-550px */
+@media (min-width: 450px) and (max-width: 550px) {
+    .container { padding: 15px; }
+    .title { font-size: 1.7rem; }
+    .center{
+        width:60%
+    }
+    .description { font-size: 1.3rem; }
+    .specialDescription { font-size: 1.3rem; width:85%; }
+}
+
+/* 550px-650px */
+@media (min-width: 550px) and (max-width: 650px) {
+    .title { font-size: 1.8rem; }
+    .center{
+        width:55%
+    }
+    .row { flex-direction: column; }
+     .specialDescription { font-size: 1.3rem; width:75%; }
+}
+
+/* 650px-750px */
+@media (min-width: 650px) and (max-width: 750px) {
+    .title { font-size: 1.9rem; }
+    .specialDescription { font-size: 1.3rem; width:75%; }
+    .center{
+        width:50%
+    }
+}
+
+/* 750px-850px */
+@media (min-width: 750px) and (max-width: 850px) {
+    /* הקלאסים הרגילים מתאימים לטווח זה */
+    .specialDescription { font-size: 1.3rem; width:70%; }
+    .center{
+        width:45%
+    }
+}
+
+/* 850px-950px */
+@media (min-width: 850px) and (max-width: 950px) {
+    .container { max-width: 850px; }
+    .title { font-size: 2.1rem; }
+    .description { font-size: 1.5rem; }
+    .center{
+        width:40%
+    }
+    .specialDescription { font-size: 1.35rem;width:70%; }
+}
+
+/* 950px-1050px */
+@media (min-width: 950px) and (max-width: 1050px) {
+    .container { max-width: 950px; }
+    .title { font-size: 2.2rem; }
+    .description { font-size: 1.6rem; }
+    .specialDescription { font-size: 1.35rem; width:60%; }
+    .center{
+        width:35%
+    }
+}
+
+/* 1050px-1150px */
+@media (min-width: 1050px) and (max-width: 1150px) {
+    .container { max-width: 1050px; }
+    .title { font-size: 2.3rem; }
+    .description { font-size: 1.7rem; }
+    .specialDescription { font-size: 1.35rem;width:60%; }
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Assistant';
+    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight:800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AssistantR';
+    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto';
+    src: url('./NotoSansHebrew-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight:900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NotoR';
+    src: url('./NotoSansHebrew-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PlayFair';
+    src: url('./PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight:Regular 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ManRope';
+    src: url('./Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight:Regular 400;
+    font-style: normal;
+  }

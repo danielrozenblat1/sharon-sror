@@ -1,0 +1,129 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .stagesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .stage {
+    position: relative;
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  
+  .stage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stageNumber {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+    transform: rotate(5deg);
+    text-shadow: 
+      2px 2px 3px rgba(0, 0, 0, 0.1),
+      -2px -2px 3px rgba(255, 255, 255, 0.1);
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  .stageContent {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .stageTitle {
+    font-family: 'Assistant', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stageDescription {
+    font-family: 'AssistantR', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .stage1::before { background-color: #d1a39e; }
+  .stage2::before { background-color: #e8c5b5; }
+  .stage3::before { background-color: #b8877d; }
+  .stage4::before { background-color: #7d5a5a; }
+  
+  @media (max-width: 550px) {
+    .container {
+      max-width: 450px;
+    }
+    .stageNumber {
+      font-size: 5rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .container {
+      max-width: 350px;
+    }
+    .stage {
+      padding: 1.2rem;
+    }
+    .stageNumber {
+      font-size: 4rem;
+    }
+    .stageTitle {
+      font-size: 1.2rem;
+    }
+    .stageDescription {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .container {
+      max-width: 300px;
+      padding: 1.5rem 0.5rem;
+    }
+    .stage {
+      padding: 1rem;
+    }
+    .stageNumber {
+      font-size: 3.5rem;
+      top: -10px;
+      right: -5px;
+    }
+    .stageTitle {
+      font-size: 1.1rem;
+    }
+    .stageDescription {
+      font-size: 0.9rem;
+    }
+  }

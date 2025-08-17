@@ -1,0 +1,75 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    font-family: "Assistant";
+    margin: 15px auto;
+    font-size: 18px;
+    color: #2a2118;
+    background: rgb(235, 229, 229);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.37);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 35px rgba(255, 255, 255, 0.5);
+}
+
+.button:active {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leftIcon, .rightIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.leftIcon {
+    margin-right: 10px;
+}
+
+.rightIcon {
+    margin-left: 10px;
+}
+
+@media (max-width: 350px) {
+    .button {
+        width: 270px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .leftIcon, .rightIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
