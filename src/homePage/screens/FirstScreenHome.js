@@ -44,7 +44,7 @@ export default function FirstScreenHome() {
         <p className={styles.subtitle}>MAKEUP ARTIST AND MENTOR</p>
         
         <Button text="אני כלה לעתיד" icon={bride} to="כלה"/>
-        <Button text="אני מאפרת" icon={makeup} to="מאפרת"/>
+        <Button text="לעמוד הקורסים והסדנאות" icon={makeup} to="מאפרת"/>
         {/* <ChevronDown className={styles.icon} size={36}/> */}
       </div>
     </div>

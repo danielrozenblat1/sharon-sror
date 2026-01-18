@@ -1,0 +1,728 @@
+/* ========================================
+   MAKEUP YOUR MIND - Premium Course Syllabus
+   Light Background Version - Dark Text
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* CSS Variables */
+.wrapper {
+  --color-primary: #281916;
+  --color-secondary: #432918;
+  --color-text: #281916;
+  --color-text-light: #5a4540;
+  --color-text-muted: #7d6560;
+  --color-warm-1: #d4a5a5;
+  --color-warm-2: #c9b8a8;
+  --color-warm-3: #b8a090;
+  --color-warm-4: #a08878;
+  --color-warm-5: #907868;
+  --color-warm-6: #785858;
+  --glass-bg: rgba(255, 255, 255, 0.5);
+  --glass-border: rgba(40, 25, 22, 0.1);
+  --glass-shadow: 0 8px 32px rgba(40, 25, 22, 0.08);
+}
+
+/* Wrapper - No Background */
+.wrapper {
+  position: relative;
+  direction: rtl;
+  padding: 4rem 1.5rem;
+}
+
+/* Container */
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.logoMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.introQuestion {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-text-light);
+  margin: 0 0 2rem 0;
+}
+
+.logoLine {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+}
+
+.mainTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.brandTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin: 0 0 1rem 0;
+}
+
+.tagline {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Intro Section */
+.introSection {
+  margin-bottom: 4rem;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.introCard {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: var(--glass-shadow);
+}
+
+.introTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: 0 0 1.5rem 0;
+}
+
+.introText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+}
+
+.introText:last-child {
+  margin-bottom: 0;
+}
+
+/* Syllabus Section */
+.syllabusSection {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 3rem 0;
+  text-align: center;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.titleDecor {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-warm-3), transparent);
+}
+
+/* Lessons Grid */
+.lessonsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Lesson Card */
+.lessonCard {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.lessonCard:nth-child(1) { animation-delay: 0.5s; }
+.lessonCard:nth-child(2) { animation-delay: 0.6s; }
+.lessonCard:nth-child(3) { animation-delay: 0.7s; }
+.lessonCard:nth-child(4) { animation-delay: 0.8s; }
+.lessonCard:nth-child(5) { animation-delay: 0.9s; }
+.lessonCard:nth-child(6) { animation-delay: 1s; }
+
+.cardShine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.lessonCard:hover .cardShine {
+  left: 100%;
+}
+
+.lessonCard:hover {
+  border-color: var(--accent-color);
+}
+
+.lessonNumber {
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(40, 25, 22, 0.06);
+  line-height: 1;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.lessonHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.lessonIcon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  color: var(--color-secondary);
+}
+
+.lessonTitles {
+  flex: 1;
+}
+
+.lessonTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.lessonSubtitle {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.lessonItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.lessonItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-family: 'AssistantR', sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.lessonItem:last-child {
+  margin-bottom: 0;
+}
+
+.itemDot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.cardGlow {
+  position: absolute;
+  bottom: -50%;
+  right: -30%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* Highlights Section */
+.highlightsSection {
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease-out 1.1s both;
+}
+
+.highlightsCard {
+  background: linear-gradient(135deg, var(--glass-bg), rgba(212, 165, 165, 0.15));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-warm-1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: var(--glass-shadow);
+}
+
+.highlightsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.highlightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.highlightItem:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-5px);
+}
+
+.highlightIcon {
+  width: 22px;
+  height: 22px;
+  color: var(--color-secondary);
+  min-width: 22px;
+}
+
+/* Footer */
+.footer {
+  animation: fadeInUp 1s ease-out 1.2s both;
+}
+
+.footerContent {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* 1050px-1150px */
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .lessonsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  .lessonCard {
+    padding: 1.8rem;
+  }
+  .lessonNumber {
+    font-size: 6rem;
+  }
+}
+
+/* 950px-1050px */
+@media (min-width: 950px) and (max-width: 1050px) {
+  .lessonsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .mainTitle {
+    font-size: 3rem;
+  }
+  .lessonCard {
+    padding: 1.6rem;
+  }
+  .lessonNumber {
+    font-size: 5.5rem;
+  }
+}
+
+/* 850px-950px */
+@media (min-width: 850px) and (max-width: 950px) {
+  .lessonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+  .brandTitle {
+    font-size: 1.6rem;
+  }
+}
+
+/* 750px-850px */
+@media (min-width: 750px) and (max-width: 850px) {
+  .lessonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .mainTitle {
+    font-size: 2.6rem;
+  }
+  .introCard {
+    padding: 2.5rem;
+  }
+}
+
+/* 650px-750px */
+@media (min-width: 650px) and (max-width: 750px) {
+  .lessonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .mainTitle {
+    font-size: 2.4rem;
+  }
+  .brandTitle {
+    font-size: 1.4rem;
+  }
+  .lessonNumber {
+    font-size: 5rem;
+  }
+}
+
+/* 550px-650px */
+@media (min-width: 550px) and (max-width: 650px) {
+  .wrapper {
+    padding: 3rem 1rem;
+  }
+  .lessonsGrid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .mainTitle {
+    font-size: 2.2rem;
+  }
+  .brandTitle {
+    font-size: 1.3rem;
+  }
+  .introCard {
+    padding: 2rem;
+  }
+  .introTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* 450px-550px */
+@media (min-width: 450px) and (max-width: 550px) {
+  .wrapper {
+    padding: 2.5rem 1rem;
+  }
+  .lessonsGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .mainTitle {
+    font-size: 2rem;
+  }
+  .brandTitle {
+    font-size: 1.2rem;
+  }
+  .introQuestion {
+    font-size: 1.2rem;
+  }
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  .lessonCard {
+    padding: 1.5rem;
+  }
+  .lessonNumber {
+    font-size: 4.5rem;
+  }
+  .highlightsCard {
+    padding: 2rem;
+  }
+  .highlightItem {
+    font-size: 1rem;
+  }
+}
+
+/* 350px-450px */
+@media (min-width: 350px) and (max-width: 450px) {
+  .wrapper {
+    padding: 2rem 0.8rem;
+  }
+  .lessonsGrid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    gap: 1rem;
+  }
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  .brandTitle {
+    font-size: 1.1rem;
+  }
+  .introQuestion {
+    font-size: 1.1rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .sectionTitle {
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+  .titleDecor {
+    width: 25px;
+  }
+  .introCard {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
+  .introTitle {
+    font-size: 1.3rem;
+  }
+  .introText {
+    font-size: 1rem;
+  }
+  .lessonCard {
+    padding: 1.3rem;
+    border-radius: 16px;
+  }
+  .lessonNumber {
+    font-size: 4rem;
+  }
+  .iconWrapper {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+  .lessonIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .lessonTitle {
+    font-size: 1.1rem;
+  }
+  .lessonItem {
+    font-size: 0.9rem;
+  }
+  .highlightsCard {
+    padding: 1.5rem;
+  }
+  .highlightsTitle {
+    font-size: 1.3rem;
+  }
+  .highlightItem {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+  }
+  .footerText {
+    font-size: 1rem;
+  }
+}
+
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+  .wrapper {
+    padding: 1.5rem 0.6rem;
+  }
+  .lessonsGrid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap: 0.8rem;
+  }
+  .mainTitle {
+    font-size: 1.6rem;
+  }
+  .brandTitle {
+    font-size: 1rem;
+  }
+  .introQuestion {
+    font-size: 1rem;
+  }
+  .tagline {
+    font-size: 0.9rem;
+  }
+  .logoLine {
+    width: 40px;
+  }
+  .sectionTitle {
+    font-size: 1.2rem;
+    gap: 0.8rem;
+  }
+  .titleDecor {
+    width: 20px;
+  }
+  .introCard {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+  .introTitle {
+    font-size: 1.2rem;
+  }
+  .introText {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .lessonCard {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+  .lessonNumber {
+    font-size: 3.5rem;
+    top: -10px;
+    left: -3px;
+  }
+  .iconWrapper {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 10px;
+  }
+  .lessonIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .lessonTitle {
+    font-size: 1rem;
+  }
+  .lessonSubtitle {
+    font-size: 0.8rem;
+  }
+  .lessonItem {
+    font-size: 0.85rem;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .itemDot {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+  }
+  .highlightsCard {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+  .highlightsTitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .highlightsList {
+    gap: 0.8rem;
+  }
+  .highlightItem {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+    gap: 0.8rem;
+  }
+  .highlightIcon {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+  }
+  .footerText {
+    font-size: 0.9rem;
+  }
+}

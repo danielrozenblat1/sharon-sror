@@ -1,0 +1,378 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mainTitle {
+  font-family: 'Assistant', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2% auto;
+  direction: rtl;
+}
+
+.durationTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Assistant', sans-serif;
+  direction: rtl;
+  color: #5a4240;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem auto 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(209, 163, 158, 0.25);
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.intro {
+  font-family: 'AssistantR', sans-serif;
+  direction: rtl;
+  color: black;
+  font-size: 1.4rem;
+  margin: 2% auto;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.detailCard {
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.detailCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.detailCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card1::before { background-color: #d1a39e; }
+.card2::before { background-color: #e8c5b5; }
+.card3::before { background-color: #b8877d; }
+.card4::before { background-color: #7d5a5a; }
+
+.iconWrapper {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  opacity: 0.3;
+  transform: rotate(-15deg);
+}
+
+.icon {
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  direction: rtl;
+}
+
+.cardTitle {
+  font-family: 'Assistant', sans-serif;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  direction: rtl;
+  text-align: right;
+}
+
+.cardDescription {
+  font-family: 'AssistantR', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  direction: rtl;
+  text-align: right;
+}
+
+.highlights {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  display: inline-block;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 0;
+}
+
+.ctaButton {
+  display: block;
+  margin: 0 auto;
+  padding: 1.2rem 3rem;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #5a4240;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(209, 163, 158, 0.3);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.65);
+  border-color: rgba(209, 163, 158, 0.4);
+}
+
+.ctaButton:active {
+  transform: translateY(-1px);
+}
+
+/* Scroll Reveal Animations */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.detailCard[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.detailCard[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (max-width: 768px) {
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 450px;
+    padding: 2rem 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .mainTitle {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+  
+  .durationTag {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.8rem auto 1.5rem;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+  
+  .detailsGrid {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .highlights {
+    margin-bottom: 2rem;
+  }
+  
+  .iconWrapper svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .ctaButton {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 350px;
+    padding: 1.5rem 1rem;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .detailCard {
+    padding: 1.5rem;
+  }
+  
+  .mainTitle {
+    font-size: 1.8rem;
+    margin: 0.8rem auto;
+  }
+  
+  .durationTag {
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    margin: 0.6rem auto 1.2rem;
+  }
+  
+  .intro {
+    font-size: 1.1rem;
+    margin: 0.8rem auto;
+  }
+  
+  .detailsGrid {
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .highlights {
+    margin-bottom: 1.5rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+  }
+  
+  .highlight {
+    font-size: 1.15rem;
+    padding: 0.9rem 1.6rem;
+  }
+  
+  .ctaButton {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    max-width: 300px;
+    padding: 1.2rem 0.5rem;
+  }
+  
+  .header {
+    margin-bottom: 1.2rem;
+  }
+  
+  .detailCard {
+    padding: 1.2rem;
+  }
+  
+  .iconWrapper {
+    top: -10px;
+    left: -5px;
+  }
+  
+  .iconWrapper svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mainTitle {
+    font-size: 1.6rem;
+    margin: 0.6rem auto;
+  }
+  
+  .durationTag {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.8rem;
+    margin: 0.5rem auto 1rem;
+  }
+  
+  .durationTag svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .intro {
+    font-size: 1rem;
+    margin: 0.6rem auto;
+  }
+  
+  .detailsGrid {
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .highlights {
+    margin-bottom: 1.2rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  
+  .cardDescription {
+    font-size: 0.95rem;
+  }
+  
+  .highlight {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .ctaButton {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+}

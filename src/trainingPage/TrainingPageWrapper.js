@@ -1,8 +1,10 @@
 import ThirdScreenBrides from "../bridesPage/screens/ThirdScreenBrides";
 import ByMe from "../components/ByMe/ByMe";
+import FullCourse from "../components/CourseSillabus/Course";
 import FormScreen from "../components/form/FormScreen";
 import AboutMe from "../components/me/Me";
 import NavBarNew from "../components/NewNav/NavBarNew";
+import PersonalWorkshop from "../components/SadnaSillabus/SadnaSillabus";
 import VideoGallery from "../components/studioVideos/StudioVideos";
 import PrivacyPolicy from "../privacy/Privacy";
 import FirstScreenTraining from "./screens/FirstScreenTraining";
@@ -32,13 +34,16 @@ return <>
 <FirstScreenTraining/>
 <SecondScreenTraining/>
 <FormScreen/>
+<FullCourse/>
+<FormScreen/>
+<PersonalWorkshop/>
 <AboutMe/>
 
 <ThirdScreenBrides/>
 <PrivacyPolicy 
   ownerName="שרון סרור" 
-  email="sharonsror@walla.com" 
-  phone="+972 54-530-0087" 
+  email="suzanaya111@gmail.com" 
+  phone="+972 53-273-3353" 
   domain="https://sharonsror.co.il/" 
 />
 <ByMe/>

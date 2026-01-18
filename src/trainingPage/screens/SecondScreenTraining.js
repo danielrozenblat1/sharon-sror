@@ -8,6 +8,7 @@ import social from "../../Icons/wired-outline-962-social-media-marketing-hover-p
 import TrainingSyllabus from '../../components/TrainingSillabus/TrainingSillabus';
 import TrainingText from '../../components/trainingText/TrainingText';
 import TrainingParts from '../../components/TrainingParts/TrainingParts';
+import PersonalWorkshop from '../../components/SadnaSillabus/SadnaSillabus';
 const SecondScreenTraining = () => {
     return (
         <div className={styles.container}>
@@ -37,6 +38,8 @@ const SecondScreenTraining = () => {
             </div>
             <TrainingParts/>
             <TrainingText/>
+
+
         </div>
     );
 }
