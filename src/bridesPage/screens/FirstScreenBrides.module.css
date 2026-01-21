@@ -47,21 +47,21 @@
   top: -135px;
   left: -60px;
   transform: rotate(-20deg);
-  background-image: url('../../images/שרון\ סרור\ כלות\ 5.png');
+  background-image: url('../../images/שרון\ כלות\ חדש\ 1.JPG');
 }
 
 .topRightImage {
   top: -135px;
   right: -60px;
   transform: rotate(20deg);
-  background-image: url('../../images/שרון\ סרור\ כלות\ 7.png');
+  background-image: url('../../images/שרון\ כלות\ חדש\ 5.JPG');
 }
 
 .centerImage {
   top: -135px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('../../images/שרון\ סרור\ כלות\ 12.png');
+  background-image: url('../../images/שרון\ כלות\ חדש\ 2.JPG');
   z-index: -2;
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Course.module.css';
-import { Heart, Camera, Palette, Eye, Award, Gift, Clock, Star } from 'lucide-react';
+import { Heart, Camera, Palette, Eye, Award, Gift, Clock, Star, BookOpen } from 'lucide-react';
+import FormScreen from '../form/FormScreen';
 
 const MakeupCourse = () => {
   const [activeLesson, setActiveLesson] = useState(null);
@@ -89,6 +90,12 @@ const MakeupCourse = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
+        {/* Course Badge */}
+        <div className={styles.courseBadge}>
+          <BookOpen className={styles.badgeIcon} />
+          <span>6 מפגשים מקיפים</span>
+        </div>
+
         <header className={styles.header}>
           <p className={styles.introQuestion}>תמיד אהבת איפור והבנת שהגיע הזמן שלך להרוויח ממנו?</p>
           <div className={styles.logoMark}>
@@ -188,6 +195,7 @@ const MakeupCourse = () => {
           </div>
         </footer>
       </div>
+      <FormScreen/>
     </div>
   );
 };

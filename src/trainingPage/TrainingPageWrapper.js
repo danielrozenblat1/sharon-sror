@@ -5,6 +5,7 @@ import FormScreen from "../components/form/FormScreen";
 import AboutMe from "../components/me/Me";
 import NavBarNew from "../components/NewNav/NavBarNew";
 import PersonalWorkshop from "../components/SadnaSillabus/SadnaSillabus";
+import SectionDivider from "../components/SectionDevider/SectionDevider";
 import VideoGallery from "../components/studioVideos/StudioVideos";
 import PrivacyPolicy from "../privacy/Privacy";
 import FirstScreenTraining from "./screens/FirstScreenTraining";
@@ -34,8 +35,10 @@ return <>
 <FirstScreenTraining/>
 <SecondScreenTraining/>
 <FormScreen/>
+
 <FullCourse/>
-<FormScreen/>
+
+
 <PersonalWorkshop/>
 <AboutMe/>
 

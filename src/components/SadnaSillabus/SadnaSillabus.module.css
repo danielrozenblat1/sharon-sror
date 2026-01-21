@@ -4,6 +4,36 @@
   padding: 3rem 2rem;
 }
 
+/* Workshop Badge - Visual Differentiator */
+.workshopBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: fit-content;
+  margin: 0 auto 1.5rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, rgba(209, 163, 158, 0.2), rgba(232, 197, 181, 0.15));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(209, 163, 158, 0.35);
+  border-radius: 50px;
+}
+
+.badgeIcon {
+  width: 20px;
+  height: 20px;
+  color: #7d5a5a;
+}
+
+.workshopBadge span {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7d5a5a;
+  letter-spacing: 0.02em;
+}
+
 .header {
   text-align: center;
   margin-bottom: 3rem;
@@ -244,6 +274,15 @@
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
   }
+
+  .workshopBadge {
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .workshopBadge span {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -301,6 +340,20 @@
   .ctaButton {
     padding: 1rem 2rem;
     font-size: 1.1rem;
+  }
+
+  .workshopBadge {
+    padding: 0.6rem 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .workshopBadge span {
+    font-size: 0.9rem;
+  }
+  
+  .badgeIcon {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -374,5 +427,19 @@
   .ctaButton {
     padding: 0.9rem 1.8rem;
     font-size: 1rem;
+  }
+
+  .workshopBadge {
+    padding: 0.5rem 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .workshopBadge span {
+    font-size: 0.85rem;
+  }
+  
+  .badgeIcon {
+    width: 16px;
+    height: 16px;
   }
 }

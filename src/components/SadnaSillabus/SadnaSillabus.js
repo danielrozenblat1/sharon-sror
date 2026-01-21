@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Sparkles, Palette, Layers, ShoppingBag, Clock } from 'lucide-react';
+import { Sparkles, Palette, Layers, ShoppingBag, Clock, Wand2 } from 'lucide-react';
 import styles from './SadnaSillabus.module.css';
 
 const PersonalWorkshop = () => {
@@ -59,6 +59,12 @@ const PersonalWorkshop = () => {
 
   return (
     <div className={styles.container} ref={containerRef}>
+      {/* Workshop Badge - Visual indicator this is a workshop */}
+      <div className={styles.workshopBadge} data-reveal>
+        <Wand2 className={styles.badgeIcon} />
+        <span>מפגש אחד אינטנסיבי</span>
+      </div>
+
       <div className={styles.header}>
         <h2 className={styles.mainTitle} data-reveal>סדנת איפור אישית</h2>
         

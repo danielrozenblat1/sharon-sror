@@ -1,6 +1,6 @@
 /* ========================================
    MAKEUP YOUR MIND - Premium Course Syllabus
-   Light Background Version - Dark Text
+   Full Width White Background Container
    ======================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
@@ -23,11 +23,16 @@
   --glass-shadow: 0 8px 32px rgba(40, 25, 22, 0.08);
 }
 
-/* Wrapper - No Background */
+/* Wrapper - Full Width White Background with Border Radius */
 .wrapper {
   position: relative;
   direction: rtl;
   padding: 4rem 1.5rem;
+  background: #ffffff;
+  border-radius: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 10px 40px rgba(40, 25, 22, 0.1);
 }
 
 /* Container */
@@ -35,6 +40,35 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Course Badge */
+.courseBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: fit-content;
+  margin: 0 auto 2rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, rgba(120, 88, 88, 0.12), rgba(176, 144, 123, 0.1));
+  border: 1px solid rgba(120, 88, 88, 0.2);
+  border-radius: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.badgeIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-warm-6);
+}
+
+.courseBadge span {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-warm-6);
+  letter-spacing: 0.02em;
 }
 
 /* Header Section */
@@ -97,7 +131,7 @@
 
 .introCard {
   position: relative;
-  background: var(--glass-bg);
+  background: rgba(245, 242, 240, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
@@ -163,7 +197,7 @@
 /* Lesson Card */
 .lessonCard {
   position: relative;
-  background: var(--glass-bg);
+  background: rgba(245, 242, 240, 0.8);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid var(--glass-border);
@@ -172,7 +206,7 @@
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: hidden;
-  box-shadow: var(--glass-shadow);
+  box-shadow: 0 4px 20px rgba(40, 25, 22, 0.06);
   animation: fadeInUp 0.8s ease-out both;
 }
 
@@ -192,7 +226,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.6),
     transparent
   );
   transition: left 0.6s ease;
@@ -205,6 +239,7 @@
 
 .lessonCard:hover {
   border-color: var(--accent-color);
+  box-shadow: 0 8px 30px rgba(40, 25, 22, 0.12);
 }
 
 .lessonNumber {
@@ -214,7 +249,7 @@
   font-family: 'Assistant', sans-serif;
   font-size: 7rem;
   font-weight: 700;
-  color: rgba(40, 25, 22, 0.06);
+  color: rgba(40, 25, 22, 0.05);
   line-height: 1;
   pointer-events: none;
   transition: all 0.4s ease;
@@ -309,7 +344,7 @@
 }
 
 .highlightsCard {
-  background: linear-gradient(135deg, var(--glass-bg), rgba(212, 165, 165, 0.15));
+  background: linear-gradient(135deg, rgba(245, 242, 240, 0.8), rgba(212, 165, 165, 0.15));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--color-warm-1);
@@ -347,13 +382,13 @@
   font-size: 1.1rem;
   color: var(--color-text);
   padding: 0.8rem 1.2rem;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .highlightItem:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.9);
   transform: translateX(-5px);
 }
 
@@ -486,12 +521,16 @@
   .lessonNumber {
     font-size: 5rem;
   }
+  .wrapper {
+    border-radius: 35px;
+  }
 }
 
 /* 550px-650px */
 @media (min-width: 550px) and (max-width: 650px) {
   .wrapper {
     padding: 3rem 1rem;
+    border-radius: 30px;
   }
   .lessonsGrid {
     grid-template-columns: 1fr;
@@ -510,12 +549,20 @@
   .introTitle {
     font-size: 1.5rem;
   }
+  .courseBadge {
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .courseBadge span {
+    font-size: 1rem;
+  }
 }
 
 /* 450px-550px */
 @media (min-width: 450px) and (max-width: 550px) {
   .wrapper {
     padding: 2.5rem 1rem;
+    border-radius: 28px;
   }
   .lessonsGrid {
     grid-template-columns: 1fr;
@@ -546,12 +593,24 @@
   .highlightItem {
     font-size: 1rem;
   }
+  .courseBadge {
+    padding: 0.6rem 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+  .courseBadge span {
+    font-size: 0.95rem;
+  }
+  .badgeIcon {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /* 350px-450px */
 @media (min-width: 350px) and (max-width: 450px) {
   .wrapper {
     padding: 2rem 0.8rem;
+    border-radius: 24px;
   }
   .lessonsGrid {
     grid-template-columns: 1fr;
@@ -619,12 +678,24 @@
   .footerText {
     font-size: 1rem;
   }
+  .courseBadge {
+    padding: 0.55rem 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .courseBadge span {
+    font-size: 0.9rem;
+  }
+  .badgeIcon {
+    width: 17px;
+    height: 17px;
+  }
 }
 
 /* מתחת ל-350px */
 @media (max-width: 349px) {
   .wrapper {
     padding: 1.5rem 0.6rem;
+    border-radius: 20px;
   }
   .lessonsGrid {
     grid-template-columns: 1fr;
@@ -718,5 +789,16 @@
   }
   .footerText {
     font-size: 0.9rem;
+  }
+  .courseBadge {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .courseBadge span {
+    font-size: 0.85rem;
+  }
+  .badgeIcon {
+    width: 16px;
+    height: 16px;
   }
 }

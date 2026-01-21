@@ -8,8 +8,9 @@ import macVideo from "../../videos/שרון סרור מאק.mp4"
 import sharonTraining from "../../videos/שרון סרור השתלמות.mp4"
 import sharonPhotoes from "../../videos/שרון סרור צילום.mp4"
 import sharonSadna from "../../videos/שרון סרור סדנא.mp4"
+import sharonNars from "../../videos/שרון עם נארס.MP4"
 import { useLocation } from 'react-router-dom';
-
+import nars from "../../images/נארס לוגו.png"
 const AboutMe = () => {
   const location = useLocation();
   const getMessage = () => {
@@ -30,6 +31,7 @@ const AboutMe = () => {
     { src: sharonTraining, alt: 'שרון סרור השתלמות' },
     { src: sharonPhotoes, alt: 'שרון סרור צילום' },
     { src: sharonSadna, alt: 'שרון סרור סדנא' },
+    { src: sharonNars, alt: 'שרון סרור עם נארס' },
   ]
   
   return <>
@@ -50,6 +52,7 @@ const AboutMe = () => {
     <div className={styles.subtitle}>שיתפתי פעולה והעברתי הרצאות ב</div>
     <div className={styles.center}>
       <img src={mac} alt="mac" className={styles.mac} />
+            <img src={nars} alt="nars" className={styles.mac} />
     </div>
     
     <div className={styles.subtitle}>אני לא מפחדת לחשוף את כל הסודות והטכניקות שלי</div>

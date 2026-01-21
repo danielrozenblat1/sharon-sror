@@ -8,18 +8,7 @@ import LessonBubble from '../../components/steps/Step';
 const SecondScreenBrides = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.title}>שמעתי כבר מאות כלות</div>
-            <div className={styles.specialDescription}>
-                <AlertCircle className={styles.icon} size={32} />
-                <span>שהתאכזבו והרגישו שהן לא נראות כמו שהן רצו בחתונה שלהן</span>
-                <AlertCircle className={styles.icon} size={32} />
-            </div>
-            <div className={styles.title}>ואפילו הורידו את האיפור ונסעו למאפרת אחרת באותו היום!</div>
-            <div className={styles.specialDescription}>
-                <AlertCircle className={styles.icon} size={32} />
-                <span>ותאמיני לי שאת לא רוצה להיות שם</span>
-                <AlertCircle className={styles.icon} size={32} />
-            </div>
+            
             <div className={styles.title}>אצלי כל כלה</div>
             <div className={styles.row}>
 

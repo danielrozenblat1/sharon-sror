@@ -1,0 +1,353 @@
+/* ========================================
+   Section Divider - Elegant Transition
+   For MAKEUP YOUR MIND Course Sections
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.dividerWrapper {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  direction: rtl;
+}
+
+/* Variant: Default */
+.default {
+  background: transparent;
+}
+
+/* Variant: Elegant - with subtle background shift */
+.elegant {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 30%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.15) 70%,
+    transparent 100%
+  );
+}
+
+/* Variant: Bold - stronger visual separation */
+.bold {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(120, 88, 88, 0.08) 30%,
+    rgba(120, 88, 88, 0.12) 50%,
+    rgba(120, 88, 88, 0.08) 70%,
+    transparent 100%
+  );
+}
+
+.dividerContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Decorative Top Elements */
+.decorativeTop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.decorLine {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(120, 88, 88, 0.4),
+    rgba(120, 88, 88, 0.6)
+  );
+}
+
+.decorLine:first-child {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 88, 88, 0.6),
+    rgba(120, 88, 88, 0.4),
+    transparent
+  );
+}
+
+.decorDiamond {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #d4a5a5, #907868);
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(120, 88, 88, 0.3);
+}
+
+/* Main Title */
+.sectionTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #281916;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+
+.sectionTitle::before,
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4a5a5, transparent);
+  transition: width 0.6s ease;
+}
+
+.dividerWrapper:hover .sectionTitle::before {
+  width: 60px;
+  right: calc(100% + 20px);
+}
+
+.dividerWrapper:hover .sectionTitle::after {
+  width: 60px;
+  left: calc(100% + 20px);
+}
+
+/* Subtitle */
+.sectionSubtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5a4540;
+  margin: 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Decorative Bottom Elements */
+.decorativeBottom {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.dotLeft,
+.dotRight {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b8a090;
+  opacity: 0.7;
+}
+
+.centerLine {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #b8a090 20%,
+    #907868 50%,
+    #b8a090 80%,
+    transparent
+  );
+  border-radius: 2px;
+}
+
+/* Floating Decorative Elements */
+.floatingDecor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floatCircle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 165, 165, 0.2);
+  animation: floatPulse 4s ease-in-out infinite;
+}
+
+.floatCircle:first-child {
+  width: 150px;
+  height: 150px;
+  top: -30px;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.floatCircle:last-child {
+  width: 100px;
+  height: 100px;
+  bottom: -20px;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+@keyframes floatPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+  .decorLine {
+    width: 70px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 950px) {
+  .dividerWrapper {
+    padding: 3.5rem 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.2rem;
+  }
+  .decorLine {
+    width: 60px;
+  }
+  .centerLine {
+    width: 100px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  .dividerWrapper {
+    padding: 3rem 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+  .decorLine {
+    width: 50px;
+  }
+  .centerLine {
+    width: 80px;
+  }
+  .floatCircle:first-child {
+    width: 100px;
+    height: 100px;
+  }
+  .floatCircle:last-child {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .dividerWrapper {
+    padding: 2.5rem 1rem;
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+  .decorLine {
+    width: 40px;
+  }
+  .decorDiamond {
+    width: 8px;
+    height: 8px;
+  }
+  .centerLine {
+    width: 70px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .dividerWrapper {
+    padding: 2rem 0.8rem;
+  }
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  .sectionSubtitle {
+    font-size: 0.95rem;
+  }
+  .decorLine {
+    width: 30px;
+  }
+  .decorDiamond {
+    width: 7px;
+    height: 7px;
+  }
+  .centerLine {
+    width: 60px;
+  }
+  .dotLeft,
+  .dotRight {
+    width: 5px;
+    height: 5px;
+  }
+  .floatCircle:first-child {
+    width: 80px;
+    height: 80px;
+  }
+  .floatCircle:last-child {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 349px) {
+  .dividerWrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+  .sectionSubtitle {
+    font-size: 0.9rem;
+  }
+  .decorLine {
+    width: 25px;
+  }
+  .decorDiamond {
+    width: 6px;
+    height: 6px;
+  }
+  .centerLine {
+    width: 50px;
+  }
+  .floatingDecor {
+    display: none;
+  }
+}
