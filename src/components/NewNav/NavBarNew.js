@@ -62,7 +62,7 @@ const NavBarNew = () => {
 
   const menuItems = [
     { text: 'אני כלה לעתיד', path: '/כלה' },
-    { text: 'אני מאפרת', path: '/מאפרת' },
+    { text: 'לקורסים וההשתלמויות שלי', path: '/מאפרת' },
     { text: 'העמוד הראשי', path: '/' }
   ];
 

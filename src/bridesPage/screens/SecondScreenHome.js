@@ -34,6 +34,12 @@ import result27 from "../../images/שרון סרור כלות 27.png";
 import result28 from "../../images/שרון סרור כלות 28.png";
 import result29 from "../../images/שרון סרור כלות 29.png";
 import result30 from "../../images/שרון סרור כלות 30.png";
+
+import result33 from "../../images/שרון כלות חדש 1.JPG";
+import result34 from "../../images/שרון כלות חדש 2.JPG";
+import result35 from "../../images/שרון כלות חדש 3.JPG";
+import result36 from "../../images/שרון כלות חדש 4.JPG";
+import result37 from "../../images/שרון כלות חדש 5.JPG";
 import Button from '../../components/button/Button';
 import { useLocation } from 'react-router-dom';
 
@@ -92,9 +98,9 @@ const SecondScreenHome = (props) => {
       };
     const content = [
         { type: 'image', src: result1 },
-      
+        { type: 'image', src: result2 },
         { type: 'image', src: result3 },
-      
+        { type: 'image', src: result4 },
         { type: 'image', src: result5 },
         { type: 'image', src: result6 },
         { type: 'image', src: result7 },
@@ -104,21 +110,29 @@ const SecondScreenHome = (props) => {
         { type: 'image', src: result11 },
         { type: 'image', src: result12 },
         { type: 'image', src: result13 },
+          { type: 'image', src: result34 },
+            { type: 'image', src: result35 },
+              { type: 'image', src: result36 },
+
         { type: 'image', src: result14 },
         { type: 'image', src: result15 },
         { type: 'image', src: result16 },
         { type: 'image', src: result17 },
-      
+        { type: 'image', src: result18 },
+        { type: 'image', src: result19 },
+          { type: 'image', src: result37 },
+            { type: 'image', src: result33 },
+        { type: 'image', src: result20 },
         { type: 'image', src: result21 },
         { type: 'image', src: result22 },
         { type: 'image', src: result23 },
         { type: 'image', src: result24 },
         { type: 'image', src: result25 },
         { type: 'image', src: result26 },
-        { type: 'image', src: result27 },
+   
         { type: 'image', src: result28 },
         { type: 'image', src: result29 },
-        { type: 'image', src: result30 },
+       
        
 
     ];

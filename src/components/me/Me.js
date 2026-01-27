@@ -11,6 +11,7 @@ import sharonSadna from "../../videos/שרון סרור סדנא.mp4"
 import sharonNars from "../../videos/שרון עם נארס.MP4"
 import { useLocation } from 'react-router-dom';
 import nars from "../../images/נארס לוגו.png"
+import nyx from "../../images/nyx לוגו.png"
 const AboutMe = () => {
   const location = useLocation();
   const getMessage = () => {
@@ -53,6 +54,7 @@ const AboutMe = () => {
     <div className={styles.center}>
       <img src={mac} alt="mac" className={styles.mac} />
             <img src={nars} alt="nars" className={styles.mac} />
+             <img src={nyx} alt="nyx" className={styles.mac} />
     </div>
     
     <div className={styles.subtitle}>אני לא מפחדת לחשוף את כל הסודות והטכניקות שלי</div>

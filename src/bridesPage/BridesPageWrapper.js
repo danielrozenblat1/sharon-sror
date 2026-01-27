@@ -9,7 +9,7 @@ import styles from "./BridesPageWrapper.module.css"
 import {useEffect,useRef, useState} from "react"
 import Place from "../components/place/Place";
 import ThirdScreenHome from "../homePage/screens/ThirdScreenHome";
-import SecondScreenHome from "../homePage/screens/SecondScreenHome";
+import SecondScreenHome from "./screens/SecondScreenHome"
 import VideoStudio from "../components/VideoStudio/VideoStudio";
 import PrivacyPolicy from "../privacy/Privacy";
 
@@ -33,7 +33,7 @@ return <>
 <NavBarNew/>
 <FirstScreenBrides/>
 <SecondScreenBrides/>
-<SecondScreenHome title="מקבץ כלות ולקוחות שעברו דרכי"/>
+<SecondScreenHome title="מקבץ כלות שעברו דרכי"/>
 <VideoStudio/>
 <FormScreen/>
 <AboutMe/>

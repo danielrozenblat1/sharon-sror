@@ -2,13 +2,18 @@ import React from 'react';
 import { Clock, ClipboardList, LayoutDashboard, Tv, Users, UserCheck, Camera, FileSignature } from 'lucide-react';
 import styles from './TrainingParts.module.css';
 import sharon from "../../images/שרון השתלמויות.png"
+
 const TrainingParts = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.mainTitle}>ההשתלמות אורכת כ-3 שעות ומחולקת ל-3 חלקים</h1>
+      <h1 className={styles.trainingName}>
+        <span className={styles.hebrew}>השתלמות </span>
+        <span className={styles.english}>The Next Level</span>
+      </h1>
+      <h2 className={styles.mainTitle}>ההשתלמות אורכת כ-3 שעות ומחולקת ל-3 חלקים</h2>
       
       <div className={styles.part}>
-        <h2 className={styles.partTitle}>חלק 1 - שיחת אפיון</h2>
+        <h3 className={styles.partTitle}>חלק 1 - שיחת אפיון</h3>
         <ul className={styles.itemList}>
           <li><Clock className={styles.icon} /> תיאום ציפיות מההשתלמות</li>
           <li><ClipboardList className={styles.icon} /> רשימת משימות לביצוע</li>
@@ -17,7 +22,7 @@ const TrainingParts = () => {
       </div>
 
       <div className={styles.part}>
-        <h2 className={styles.partTitle}>חלק 2 - מעשי</h2>
+        <h3 className={styles.partTitle}>חלק 2 - מעשי</h3>
         <ul className={styles.itemList}>
           <li><Tv className={styles.icon} /> למידת כל הטרנדים הכי חדשים באיפור</li>
           <li><Users className={styles.icon} /> למידת טכניקות איפור מתקדמות לכלות וערב (לבחירתך)</li>
@@ -26,9 +31,9 @@ const TrainingParts = () => {
       </div>
 
       <div className={styles.part}>
-        <h2 className={styles.partTitle}>חלק 3 - עיצוב ועריכה</h2>
+        <h3 className={styles.partTitle}>חלק 3 - עיצוב ועריכה</h3>
         <ul className={styles.itemList}>
-          <li><Camera className={styles.icon} /> שיווק,וצילום נכון לרשתות החברתיות</li>
+          <li><Camera className={styles.icon} /> שיווק, וצילום נכון לרשתות החברתיות</li>
           <li><FileSignature className={styles.icon} /> פרסום ברשתות החברתיות על מנת ליצור חשיפה</li>
         </ul>
       </div>

@@ -1,0 +1,175 @@
+.carouselWrapper {
+    position: relative;
+    padding: 0 60px;
+    margin-bottom: 40px;
+    margin: 2% auto;
+}
+
+.title {
+    font-family: "Assistant";
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    text-align: center;
+    font-size: 3rem;
+    margin: 2% auto;
+    text-shadow: 2px 1px 4px #00000085;
+    direction: rtl;
+}
+
+.description {
+    font-family: "AssistantR";
+    direction: rtl;
+    color: black;
+    font-size: 1.4rem;
+    margin: 2% auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    text-align: center;
+}
+
+.sliderContainer {
+    width: 80%;
+    margin: 2% auto;
+    overflow: visible;
+}
+
+.slideWrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.image1, .image2 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: none;
+}
+
+:global(.slick-slider) {
+    overflow: visible;
+}
+
+:global(.slick-slide) {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Остальные стили остаются без изменений */
+
+@media only screen and (max-width: 350px) {
+    .sliderContainer {
+        width: 85%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .title {
+        font-size: 25px;
+        width: 100%;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    .sliderContainer {
+        width: 85%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .title {
+        font-size: 30px;
+        width: 100%;
+    }
+    .description {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+    .sliderContainer {
+        width: 80%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .title {
+        font-size: 50px;
+        width: 75%;
+    }
+    .description {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    .sliderContainer {
+        width: 95%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .description {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    .sliderContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+    .sliderContainer {
+        width: 60%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 950px) {
+    .sliderContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1050px) {
+    .sliderContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}

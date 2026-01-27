@@ -91,17 +91,11 @@ const MakeupCourse = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         {/* Course Badge */}
-        <div className={styles.courseBadge}>
-          <BookOpen className={styles.badgeIcon} />
-          <span>6 מפגשים מקיפים</span>
-        </div>
+      
 
         <header className={styles.header}>
           <p className={styles.introQuestion}>תמיד אהבת איפור והבנת שהגיע הזמן שלך להרוויח ממנו?</p>
-          <div className={styles.logoMark}>
-            <span className={styles.logoLine}></span>
-            <span className={styles.logoLine}></span>
-          </div>
+       
           <h1 className={styles.mainTitle}>קורס איפור</h1>
           <h2 className={styles.brandTitle}>MAKEUP YOUR MIND</h2>
           <p className={styles.tagline}>הדרך שלך להפוך לאשת מקצוע</p>
